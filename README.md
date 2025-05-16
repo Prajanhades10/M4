@@ -242,3 +242,4 @@ int main() {
 ## RESULT
 Thus the C Program to compare two strings without using strcmp() has been executed successfully.
 
+
