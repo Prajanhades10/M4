@@ -216,7 +216,7 @@ int main() {
 
    
     printf("Enter second string: ");
-    scanf("%s", c2);
+    scanf("%[^\n]", c2);
 
    
     do {
