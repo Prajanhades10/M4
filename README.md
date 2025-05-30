@@ -205,38 +205,42 @@ Step 8: End the program.
 
 int main() {
     char c1[100], c2[100];
-    int flag = 0, i = 0;
+    int i = 0, flag = 0;
 
-    printf("Enter the first string: ");
-    scanf(" %[^\n]", c1); 
+    
+    printf("Enter first string: ");
+    scanf("%[^\n]", c1);
 
-    printf("Enter the second string: ");
-    scanf(" %s", c2); 
+  
+    getchar();
 
-    while (c1[i] != '\0' && c2[i] != '\0') {
+   
+    printf("Enter second string: ");
+    scanf("%s", c2);
+
+   
+    do {
         if (c1[i] != c2[i]) {
             flag = 1;
-            break; 
+            break;
         }
         i++;
-    }
+    } while (c1[i] != '\0' || c2[i] != '\0');
 
-    if (flag == 0 && c1[i] == '\0' && c2[i] == '\0') {
-        printf("Strings are the same.\n");
-    } else {
-        printf("Strings are not the same.\n");
-    }
+   
+    if (flag == 0)
+        printf("Strings are same.\n");
+    else
+        printf("Strings are not same.\n");
 
+   
     return 0;
 }
 ```
 
 ## OUTPUT
 
-![Screenshot 2025-04-27 101916](https://github.com/user-attachments/assets/e0ca5339-3580-4715-807a-5ebf63b8066e)
-
-
-![Screenshot 2025-04-27 101936](https://github.com/user-attachments/assets/7cd3aac4-63ca-4639-8e4b-d2912d9d91b5)
+![Screenshot 2025-05-29 204818](https://github.com/user-attachments/assets/7c1a4af7-678d-48ad-85fd-4d05c3f67c00)
 
 
 ## RESULT
